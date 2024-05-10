@@ -1,0 +1,46 @@
+.home-page-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+.header-container {
+    background-color: lightgrey;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-option-container {
+    position: relative;
+    width: 10vw;
+    height: 8vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    text-align: center;
+    align-content: center;
+    /* outline: 2px solid red;  */
+}
+
+.picture-carousel {
+    position: relative;
+    align-self: center;
+    text-align: center;
+    margin-top: 20vh;
+    width: 75vw;
+    height: 75vh;
+    margin-bottom: 5vh;
+    outline: 2px solid red; 
+}
+
+.temp-title {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
