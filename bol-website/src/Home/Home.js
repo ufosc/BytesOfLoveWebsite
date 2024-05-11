@@ -1,28 +1,42 @@
+import {useNavigate} from "react-router-dom";
 import "./Home.css"
+import Navbar from "../Navbar/Navbar" 
 
 const Home = () => {
+    const navigate = useNavigate();
 
     return (
         <div className="home-page-container">
-            <div className="header-container">
-                <div className="header-option-container">
-                    Download
-                </div>
+            <Navbar />
 
-                <div className="header-option-container">
-                    Home
-                </div>
-
-                <div className="header-option-container">
-                    About
-                </div>
+            <div className="picture-carousel">
+                <div className="temp-centered-text">Game opening screen</div>
             </div>
 
             <div className="picture-carousel">
-                Insert picture carousel
+            <div className="temp-centered-text">Picture carousel</div>
             </div>
 
-            <div className="temp-title">Bytes of Love - home page</div>
+            <div className="download-title">
+                How to Download
+            </div>
+
+            <div className="download-links-box">
+                <div className="download-line">
+                    <div className="os-type">Mac</div>
+                    <div className="download-button">Download</div>
+                </div>
+
+                <div className="download-line">
+                    <div className="os-type">Linux</div>
+                    <div className="download-button">Download</div>
+                </div>
+
+                <div className="download-line">
+                    <div className="os-type">Windows</div>
+                    <div className="download-button">Download</div>
+                </div>
+            </div>
 
         </div>
     )

@@ -1,6 +1,11 @@
+import Navbar from "../Navbar/Navbar" 
+
 const About = () => {
     return (
-        <h1>Bytes of Love - about page</h1>
+        <div>
+            <Navbar />
+            <h1>Bytes of Love - about page</h1>
+        </div>
     )
 } 
 

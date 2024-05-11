@@ -5,37 +5,56 @@
     background-color: beige;
 }
 
-.header-container {
-    background-color: lightgrey;
-    position: fixed;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-option-container {
-    position: relative;
-    width: 10vw;
-    height: 8vh;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
-    text-align: center;
-    align-content: center;
-    /* outline: 2px solid red;  */
-}
-
 .picture-carousel {
     position: relative;
     align-self: center;
     text-align: center;
-    margin-top: 20vh;
-    width: 75vw;
-    height: 75vh;
-    margin-bottom: 5vh;
+    align-content: center;
+    width: 60vw;
+    height: 60vh;
+    margin-bottom: 10vh;
     outline: 2px solid red; 
+}
+
+.download-title {
+    position: relative;
+    margin-bottom: 1vh;
+    align-self: center;
+    font-size: 50px;
+}
+
+.download-links-box {
+    position: relative;
+    margin-bottom: 10vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}   
+
+.download-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.os-type {
+    width: 10vw;
+    height: 3vw;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    margin-bottom: 2vh;
+}
+
+.download-button {
+    margin-left: 5vw;
+    width: 10vw;
+    height: 3vw;
+    background-color: lightgrey;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    margin-bottom: 2vh;
 }
 
 .temp-title {
@@ -43,4 +62,9 @@
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+}
+
+.temp-centered-text {
+    align-content: center;
+    font-size: 50px;
 }
