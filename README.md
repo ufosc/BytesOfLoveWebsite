@@ -2,7 +2,7 @@
 
 Welcome to the website for **Bytes of Love**!
 
-This website allows players to learn about the basic premise of the game and download it for FREE!
+This website allows players to learn about what Bytes of Love is and get a download of the current game for FREE!
 
 ## Website Link
 
