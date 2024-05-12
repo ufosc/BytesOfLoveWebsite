@@ -11,7 +11,7 @@ const Home = () => {
     const toggleMute = () => {
         setIsMuted(!isMuted);
         if (audioRef.current) {
-            audioRef.current.volume = isMuted ? 1 : 0; // Set volume to 1 if currently muted, 0 if currently unmuted
+            audioRef.current.volume = isMuted ? 0.5 : 0; // Set volume to 1 if currently muted, 0 if currently unmuted
             if (isMuted) {
                 audioRef.current.play().catch(err => {
                     console.error("Error playing audio:", err);
