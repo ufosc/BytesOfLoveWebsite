@@ -39,10 +39,7 @@ const Home = () => {
             <Navbar />
 
             <div class="picture-carousel">
-                <video class="w-full h-full" controls loop autoplay>
-                    <source src="/main_menu.mp4" type="video/mp4"/>
-                    Your browser does not support this video.
-                </video>
+                <img src="main_menu.gif" alt="bolCover" class="w-full h-full" />
             </div>
 
             <div className="picture-carousel">
