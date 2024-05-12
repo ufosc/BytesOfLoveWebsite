@@ -4,18 +4,34 @@ import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
-    const navigate = useNavigate();
-    const [isMuted, setIsMuted] = useState(true); // Initialize as muted
+    const [isMuted, setIsMuted] = useState(false); // Initialize as muted
     const audioRef = useRef(null); // Ref for the audio element     
     const [videoPlaying, setVideoPlaying] = useState(false);
 
     const toggleMute = () => {
         setIsMuted(!isMuted);
         if (audioRef.current) {
-            audioRef.current.muted = !audioRef.current.muted; // Toggle the muted property
+            audioRef.current.volume = isMuted ? 1 : 0; // Set volume to 1 if currently muted, 0 if currently unmuted
+            if (isMuted) {
+                audioRef.current.play().catch(err => {
+                    console.error("Error playing audio:", err);
+                });
+            } else {
+                audioRef.current.pause();
+            }
         }
     };
 
+    useEffect(() => {
+        toggleMute();
+        const handleLocationChange = () => {
+            setIsMuted(true); 
+            if (audioRef.current) {
+                audioRef.current.pause();
+            }
+        };
+    }, []);
+    
     useEffect(() => {
         const videoElement = document.querySelector('video');
         if (videoElement) {
@@ -27,7 +43,6 @@ const Home = () => {
             };
         }
         if (audioRef.current) {
-            audioRef.current.volume = 0.5; // Set default volume to 50%
             audioRef.current.play().catch(err => {
                 console.error("Error playing audio:", err);
             });
@@ -87,10 +102,9 @@ const Home = () => {
                 )}
             </button>            
 
-            <audio ref={audioRef} src="main_menu.mp3" loop muted />
+            <audio ref={audioRef} src="main_menu.mp3" loop />
         </div>
     );
 };
 
 export default Home;
-
