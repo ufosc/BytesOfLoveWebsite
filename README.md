@@ -1,4 +1,4 @@
-# BytesOfLoveWebsite
+# Bytes Of Website
 
 Welcome to the website for **Bytes of Love**!
 
@@ -6,7 +6,7 @@ This website allows players to learn about the basic premise of the game and dow
 
 ## Website Link
 
-To see the website, navigate to this link: [dummywebsite.net](http://dummywebsite.net)
+To see the website, navigate to this link: [bytesoflove.com](https://bytes-of-love-website.vercel.app/)
 
 ## How to Run Locally
 
