@@ -22,20 +22,24 @@ const Home = () => {
             </div>
 
             <div className="download-links-box">
-                <div className="download-line">
-                    <div className="os-type">Mac</div>
-                    <div className="download-button">Download</div>
+                <div class="flex w-3/12 items-center justify-center">
+                    <div class="text-2xl m-4 w-1/2 text-center">Mac</div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+                         <a href="https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9">Download</a>
+                    </button>
                 </div>
 
-                <div className="download-line">
-                    <div className="os-type">Linux</div>
-                    <div className="download-button">Download</div>
+                <div class="flex w-3/12 items-center justify-center">
+                    <div class="text-2xl m-4 w-1/2 text-center">Linux</div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+                         <a href="https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9">Download</a>
+                    </button>
                 </div>
 
-                <div className="download-line">
-                    <div className="os-type">Windows</div>
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                         Button
+                <div class="flex w-3/12 items-center justify-center">
+                    <div class="text-2xl m-4 w-1/2 text-center">Windows</div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+                         <a href="https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9">Download</a>
                     </button>
                 </div>
             </div>
