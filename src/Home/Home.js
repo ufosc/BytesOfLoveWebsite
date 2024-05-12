@@ -34,7 +34,9 @@ const Home = () => {
 
                 <div className="download-line">
                     <div className="os-type">Windows</div>
-                    <div className="download-button">Download</div>
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                         Button
+                    </button>
                 </div>
             </div>
 
