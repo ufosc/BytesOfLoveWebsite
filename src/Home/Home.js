@@ -17,7 +17,7 @@ const Home = () => {
                     console.error("Error playing audio:", err);
                 });
             } else {
-                audioRef.current.pause();
+                audioRef.current.pause();   
             }
         }
     };
@@ -54,36 +54,40 @@ const Home = () => {
             <Navbar />
 
             <div class="picture-carousel">
-                <img src="main_menu.gif" alt="bolCover" class="w-full h-full" />
+                <img src="main_menu.gif" alt="bolCover" class="w-full h-full" style={{borderRadius: "1vh"}}/>
             </div>
+
+            <div className="divider"></div>
 
             <div className="picture-carousel">
-                <div className="temp-centered-text">Picture carousel</div>
+                <img src="2_girls_classroom.png" alt="3 Girls in Classroom" class="w-full h-full" style={{borderRadius: "1vh"}}/>
             </div>
 
+            <div className="divider"></div>
+
             <div className="download-title">
-                How to Download
+                How to Play
             </div>
 
             <div className="download-links-box">
                 <div className="flex w-3/12 items-center justify-center">
-                    <div className="text-2xl m-4 w-1/2 text-center">Mac</div>
-                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
-                         <a href="https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9">Download</a>
+                    <div className="os-type text-2xl m-4 w-1/2 text-center">Mac</div>
+                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="download-button-color hover:bg-blue-700f text-white font-bold py-2 px-4 rounded m-4">
+                         <a>Download</a>
                     </button>
                 </div>
 
                 <div className="flex w-3/12 items-center justify-center">
-                    <div className="text-2xl m-4 w-1/2 text-center">Linux</div>
-                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
-                         <a href="https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9">Download</a>
+                    <div className="os-type text-2xl m-4 w-1/2 text-center">Linux</div>
+                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="download-button-color bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+                         <a>Download</a>
                     </button>
                 </div>
 
                 <div className="flex w-3/12 items-center justify-center">
-                    <div className="text-2xl m-4 w-1/2 text-center">Windows</div>
-                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
-                         <a href="https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9">Download</a>
+                    <div className="os-type text-2xl m-4 w-1/2 text-center">Windows</div>
+                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="download-button-color bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
+                         <a>Download</a>
                     </button>
                 </div>
             </div>
