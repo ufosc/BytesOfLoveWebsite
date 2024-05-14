@@ -16,7 +16,7 @@ export const images = [
 export const Carousel = ({ imageIndex }) => {
     return (
         <div className="Carousel">
-                <img src={images[imageIndex]} alt={`Displaying ${images[imageIndex]}`} />
+                <img class="h-auto" src={images[imageIndex]} alt={`Displaying ${images[imageIndex]}`} />
 
 
         </div>
