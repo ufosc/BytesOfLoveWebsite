@@ -1,8 +1,8 @@
 .header-container {
-    background-color: lightgrey;
+    background-color: rgba(252,203,255,255);
     position: relative;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 10vh;
     display: flex;
     flex-direction: row;
@@ -18,7 +18,20 @@
     margin-right: 2.5vw;
     text-align: center;
     align-content: center;
-    font-size: 25px;
     cursor: pointer;
     /* outline: 2px solid red;  */
 }
+
+.header-option-text {
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.header-option-text:hover {
+    color: rgba(156,71,150,255);
+}
+
+
+/* Ideas: */
+/*   - A feel like the navbar still looks kind of slapped on there. Maybe adding the ufosc and bytes of love logo in the corners would help */

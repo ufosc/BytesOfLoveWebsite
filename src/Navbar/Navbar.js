@@ -7,15 +7,15 @@ const Navbar = () => {
     return (
         <div className="header-container">
             <div className="header-option-container" onClick={() => {navigate(`/download`)}}>
-                Download
+                <div className="header-option-text">Download</div>
             </div>
 
             <div className="header-option-container" onClick={() => {navigate(`/`)}}>
-                Home
+                <div className="header-option-text">Home</div>
             </div>
 
             <div className="header-option-container" onClick={() => {navigate(`/about`)}}>
-                About
+                <div className="header-option-text">About</div>
             </div>
         </div>
     )
