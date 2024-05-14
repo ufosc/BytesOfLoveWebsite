@@ -54,13 +54,13 @@ const Home = () => {
             <Navbar />
 
             <div class="picture-carousel">
-                <img src="main_menu.gif" alt="bolCover" class="w-full h-full" style={{borderRadius: "1vh"}}/>
+                <img src="main_menu.gif" alt="bolCover" class="w-full h-full border-4 border-custom-purple" style={{borderRadius: "1vh"}}/>
             </div>
 
             <div className="divider"></div>
 
             <div className="picture-carousel">
-                <img src="2_girls_classroom.png" alt="3 Girls in Classroom" class="w-full h-full" style={{borderRadius: "1vh"}}/>
+                <img src="2_girls_classroom.png" alt="3 Girls in Classroom" class="w-full h-full border-4 border-custom-purple" style={{borderRadius: "1vh"}}/>
             </div>
 
             <div className="divider"></div>
