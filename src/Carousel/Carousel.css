@@ -9,24 +9,24 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    margin: 50px auto;
     position: relative; /* Relative positioning for the button container */
-    width: 600; /* Set a fixed width for the carousel */
-    height: 400; /* Set a fixed height for the carousel */
+    width: 600px; /* Set a fixed width for the carousel */
+    height: 400px; /* Set a fixed height for the carousel */
     overflow: hidden; /* Hide overflow to keep images within the container */
-    /* background-color: #f0f0f0; Background color for better visibility */
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
 
-
 }
 
 .Carousel img {
-    width: 70%; /* Ensure the image covers the container's width */
-    height: fill; /* Ensure the image covers the container's height */
+    width: 50%; /* Ensure the image covers the container's width */
+    height: fit-content; /* Ensure the image covers the container's height */
     object-fit: cover;
     object-position: 55% 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-button button, .right-button button {
@@ -47,13 +47,11 @@ body {
 
 .button-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: bottom;
+    align-items: bottom;
     position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
+    width: 180%;
+    padding: 20px 0;
     box-sizing: border-box;
 }
 
