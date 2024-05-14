@@ -2,11 +2,24 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
+import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, images} from '../Carousel/Carousel';
+
 
 const Home = () => {
     const [isMuted, setIsMuted] = useState(false); // Initialize as muted
     const audioRef = useRef(null); // Ref for the audio element     
     const [videoPlaying, setVideoPlaying] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const handleRotateLeft = () => {
+        setCurrentImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
+    };
+    
+    const handleRotateRight = () => {
+        setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+    };
+    
+
 
     const toggleMute = () => {
         setIsMuted(!isMuted);
@@ -57,9 +70,16 @@ const Home = () => {
                 <img src="main_menu.gif" alt="bolCover" class="w-full h-full" />
             </div>
 
-            <div className="picture-carousel">
-                <div className="temp-centered-text">Picture carousel</div>
+            <div className="Carousel">
+                <Carousel imageIndex={currentImageIndex} />
+                <div className="button-container">
+                    <Carousel_Rotate_Left onRotate={handleRotateLeft} />
+                    <Carousel_Rotate_Right onRotate={handleRotateRight} />
+                </div>
+
+
             </div>
+
 
             <div className="download-title">
                 How to Download
