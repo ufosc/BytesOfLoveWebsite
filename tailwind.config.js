@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-purple': '#9C4796',  // You can name this key whatever you like
+        'custom-purple': '#9C4796',
+        'light-purple': '#B266B2',
+        'dark-purple': '#7A2C7A',
       },
       borderColor: theme => ({
         ...theme('colors'),
