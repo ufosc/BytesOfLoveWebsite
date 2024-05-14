@@ -2,11 +2,24 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
+import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, images} from '../Carousel/Carousel';
+
 
 const Home = () => {
     const [isMuted, setIsMuted] = useState(false); // Initialize as muted
     const audioRef = useRef(null); // Ref for the audio element     
     const [videoPlaying, setVideoPlaying] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const handleRotateLeft = () => {
+        setCurrentImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
+    };
+    
+    const handleRotateRight = () => {
+        setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
+    };
+    
+
 
     const toggleMute = () => {
         setIsMuted(!isMuted);
@@ -59,9 +72,16 @@ const Home = () => {
 
             <div className="divider"></div>
 
-            <div className="picture-carousel">
-                <img src="2_girls_classroom.png" alt="3 Girls in Classroom" class="w-full h-full border-4 border-custom-purple" style={{borderRadius: "1vh"}}/>
+            <div className="Carousel border-4 border-custom-purple">
+                <Carousel imageIndex={currentImageIndex} />
+                <div className="button-container">
+                    <Carousel_Rotate_Left onRotate={handleRotateLeft} />
+                    <Carousel_Rotate_Right onRotate={handleRotateRight} />
+                </div>
+
             </div>
+
+
 
             <div className="divider"></div>
 

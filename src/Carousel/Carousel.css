@@ -1,0 +1,65 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.Carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    position: relative; /* Relative positioning for the button container */
+    width: 600px; /* Set a fixed width for the carousel */
+    height: 400px; /* Set a fixed height for the carousel */
+    overflow: hidden; /* Hide overflow to keep images within the container */
+    border-radius: 5%;
+    background-size: cover;
+    background-size: no-repeat;
+
+}
+
+.Carousel img {
+    width: 50%; /* Ensure the image covers the container's width */
+    height: fit-content; /* Ensure the image covers the container's height */
+    object-fit: cover;
+    object-position: 55% 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-button button, .right-button button {
+    background-color: #4a5568;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.left-button img, .right-button img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures the image doesn't have extra space around it */
+    margin-top: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: bottom;
+    align-items: bottom;
+    position: absolute;
+    width: 180%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Custom spacing between buttons using margin */
+.left-button, .right-button{
+    margin-right: auto; /* Pushes the button to the left */
+    margin-left: auto; /* Pushes the button to the left */
+
+
+}
+
