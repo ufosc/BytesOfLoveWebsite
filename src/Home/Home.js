@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, images} from '../Carousel/Carousel';
@@ -36,6 +35,7 @@ const Home = () => {
     };
 
     useEffect(() => {
+        setCurrentImageIndex(0);
         toggleMute();
         const handleLocationChange = () => {
             setIsMuted(true); 
@@ -70,9 +70,11 @@ const Home = () => {
                 <img src="main_menu.gif" alt="bolCover" class="w-full h-full border-4 border-custom-purple" style={{borderRadius: "1vh"}}/>
             </div>
 
-            <div className="divider"></div>
+            <div>
+                <div className="description-text">A visual novel game created by the Open Source Club at the University of Florida</div>
+            </div>
 
-            <div className="Carousel border-4 border-custom-purple w-3/5 h-4/6">
+            <div className="Carousel border-4 border-custom-purple w-3/5 ">
                 <Carousel imageIndex={currentImageIndex} />
                 <div className="button-container">
                     <Carousel_Rotate_Left onRotate={handleRotateLeft} />
@@ -80,10 +82,6 @@ const Home = () => {
                 </div>
 
             </div>
-
-
-
-            <div className="divider"></div>
 
             <div className="download-title">
                 How to Play
