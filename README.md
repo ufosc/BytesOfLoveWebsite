@@ -6,7 +6,7 @@ This website allows players to learn about what Bytes of Love is and get a downl
 
 ## Website Link
 
-To see the website, navigate to this link: [bytesoflove.net](bytesoflove.net)
+To see the website, navigate to this link: [bytesoflove.net](https://bytesoflove.net)
 
 ## How to Run Locally
 
