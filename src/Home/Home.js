@@ -72,7 +72,7 @@ const Home = () => {
 
             <div className="divider"></div>
 
-            <div className="Carousel border-4 border-custom-purple">
+            <div className="Carousel border-4 border-custom-purple w-3/5 h-4/6">
                 <Carousel imageIndex={currentImageIndex} />
                 <div className="button-container">
                     <Carousel_Rotate_Left onRotate={handleRotateLeft} />
