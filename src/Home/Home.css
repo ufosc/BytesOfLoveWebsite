@@ -6,6 +6,8 @@
 }
 
 .picture-carousel {
+    display: flex;
+    object-fit: cover;
     position: relative;
     align-self: center;
     text-align: center;
