@@ -23,14 +23,7 @@
   flex-direction: row;
   margin-top: 2.5vh;
   margin-bottom: 5vh;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    /* margin-left: 2.5vw;
-    margin-right: 2.5vw; */
-    margin-top: 2.5vh;
-    margin-bottom: 5vh;
+  flex-wrap: wrap;
 }
 
 .credit-cell {
