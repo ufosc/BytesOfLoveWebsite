@@ -1,58 +1,67 @@
 .about-page-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: rgba(252,236,168,255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgba(252, 236, 168, 255);
 }
 
 .credit-row-title {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 7.5vh;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 7.5vh;
+
+  @media (max-width: 767px) {
+    font-size: 5vh;
+  }
 }
 
 .credit-row {
-    position: relative;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    /* margin-left: 2.5vw;
-    margin-right: 2.5vw; */
-    margin-top: 2.5vh;
-    margin-bottom: 5vh;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5vh;
+  margin-bottom: 5vh;
+  flex-wrap: wrap;
 }
 
 .credit-cell {
-    position: relative;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;;
-    /* outline: 2px solid red;  */
+  position: relative;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .credit-cell img {
-    width: 30vh; /* Ensure the image covers the container's width */
-    object-fit: cover;
-    border-radius: 1vh;
+  width: 30vh; /* Ensure the image covers the container's width */
+  object-fit: cover;
+  border-radius: 1vh;
 }
 
 .credit-name {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 4vh;
+  @media (max-width: 767px) {
+    font-size: 2.5vh;
+  }
 }
 
 .credit-title {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2.5vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.5vh;
+
+  @media (max-width: 767px) {
+    font-size: 2vh;
+  }
 }
 
 .thankyou-box {
-    margin-top: 5vh;
-    align-self: center;
-    text-align: center;
-    width: 70vw;
+  margin-top: 5vh;
+  align-self: center;
+  text-align: center;
+  width: 70vw;
 }
