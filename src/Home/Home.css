@@ -12,8 +12,8 @@
     align-self: center;
     text-align: center;
     align-content: center;
-    width: 60vw;
-    height: 65vh;
+    width: auto;
+    height: auto;
     /* outline: 2px solid red;  */
 }
 
