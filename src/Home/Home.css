@@ -6,12 +6,11 @@
 }
 
 .picture-carousel {
-    
     position: relative;
     align-self: center;
     text-align: center;
     align-content: center;
-    width: auto;
+    width: 60vw;
     height: auto;
     /* outline: 2px solid red;  */
 }
