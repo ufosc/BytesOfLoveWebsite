@@ -44,7 +44,8 @@
 
 .header-option-container {
   position: relative;
-  width: 10vw;
+  padding: 0 1px; 
+  margin: 0 10px;  
 }
 
 .header-option-text:hover {
