@@ -6,6 +6,7 @@
 }
 
 .header-container {
+  background-color: rgb(255, 211, 244);
   position: relative;
   height: 10vh;
   width: 100%;
@@ -13,11 +14,25 @@
   align-content: center;
 }
 
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; 
+  margin-left: 10px;
+}
+
 .header-option-text {
   /*
   'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   #000000
-  */  
+  */
   font-family: 'HeartBubbles', cursive;
   color: #9c4796;
   font-size: 3.5vh;
@@ -25,6 +40,11 @@
   @media (max-width: 767px) {
     font-size: 2.5vh;
   }
+}
+
+.header-option-container {
+  position: relative;
+  width: 10vw;
 }
 
 .header-option-text:hover {
