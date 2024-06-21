@@ -10,7 +10,7 @@
 
 .header-option-container {
     position: relative;
-    width: 10vw;
+    width: auto;
     height: 8vh;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
@@ -21,7 +21,9 @@
 }
 
 .header-option-text {
-    font-size: auto;
+    display: flex;
+    position: relative;
+    font-size: 150%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }

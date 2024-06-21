@@ -1,9 +1,10 @@
 import {useNavigate} from "react-router-dom";
+
 import "./Navbar.css"
 
 const Navbar = () => {
     const navigate = useNavigate();
-
+    
     return (
         <div className="header-container flex flex-row justify-between w-full border-b-2 border-custom-purple">
             <img src="https://docs.ufosc.org/img/logo.png" class="ml-4 w-12 h-12 items-left justify-left cursor-pointer" onClick={ () => window.open('https://ufosc.org/', '_blank')}/>
