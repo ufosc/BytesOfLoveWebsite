@@ -13,12 +13,6 @@ const Navbar = () => {
             onClick={() => window.open("https://ufosc.org/", "_blank")}
             alt="UF OSC Logo"
         />
-        <img 
-            src="/BoL Logo Edited.png" 
-            className="logo" 
-            alt="BoL Logo" 
-            onClick={() => window.open('https://github.com/ufosc/VisualNovel/https://ufosc.org/', '_blank')}
-        />
         </div>
         
 
