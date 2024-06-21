@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(252,236,168,255);
+    padding-bottom: 100px;
 }
 
 .picture-carousel {
