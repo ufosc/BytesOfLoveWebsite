@@ -5,3 +5,139 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.download-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: 2px solid #9c4796;
+    border-radius: 10px;
+    padding: 20px;
+    width: 750px;
+    height: 1000px;
+    margin: 0 auto;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 0.1);
+}
+
+.os-prompt-container {
+    display: flex;
+    margin-top: -700px;
+    position: relative;
+    left: -33%;
+
+}
+
+.os-prompt-text {
+    width: 600px;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9c4796;
+    text-align: center;
+}
+
+.os-text {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9c4796;
+}
+
+.os-text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 107px;
+    margin-top: 10%;
+    position: relative;
+    left: 35%;
+}
+
+.os-icon-mac {
+    transform: scale(0.8); /* Decreases the size of the image to 80% of its original size */
+    position: relative;
+    left: -1%;
+}
+
+.os-icon-win {
+    transform: scale(0.9);
+    position: relative;
+    left: -2%;
+}
+
+.os-icon-lin {
+    position: relative;
+    left: -1%;
+    top: -1%;
+}
+
+.btn-group-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 110px; /* Adjust the gap between buttons as needed */
+    align-items: center;
+    margin-top: 10%;
+    left: 52%;
+}
+
+.btn-circle {
+    width: 70px; /* Adjust size of buttons */
+    height: 70px; /* Adjust size of buttons */
+    border-radius: 50%; /* Make them circular */
+    border: 2px solid #fccbff; /* Example border color */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-danger {
+    color: #9c4796;
+    background-color: transparent;
+    border-color: #9c4796;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #fccbff;
+    border-color: #9c4796;
+}
+
+.btn-outline-danger:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.btn-outline-danger.active {
+    color: #9c4796;
+    background-color: #fccbff;
+    border-color: #9c4796;
+}
+
+.btn-download {
+    width: 400px; /* Adjust size of buttons */
+    height: 100px; /* Adjust size of buttons */
+    border-radius: 15%; /* Make them circular */
+    border: 2px solid #9c4796; /* Example border color */
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    padding: 0px 40px; /* Padding around the content */
+}
+
+.btn-download-txt {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9c4796;
+}
+
+.btn-download:hover {
+    background-color: #fccbff; /* Lighter pink color on hover */
+}
