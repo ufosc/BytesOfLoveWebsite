@@ -10,6 +10,15 @@ export const images = [
     "images/LGTM.png",
 ];
 
+export const name = [
+     "C++",
+     "Java",
+     "JavaScript",
+     "Python",
+     "",
+     "",
+]
+
 export const text = [
     "C++, an edgy CS major focused on game development",
     "Java, a determined mother returning to college to conquer challenges of the past",
@@ -22,8 +31,9 @@ export const text = [
 export const Carousel = ({ imageIndex }) => {
     return (
         <div className="Carousel">
+                <div className="heading-text" style={{fontSize: "4vh", marginTop: "3vh", marginBottom: "2vh", fontFamily: "cursive"}}>{name[imageIndex]}</div>
                 <img class="h-auto" src={images[imageIndex]} alt={`Displaying ${images[imageIndex]}`} />
-                <div className="description-text" style={{fontSize: "4vh", marginTop: "3vh"}}>{text[imageIndex]}</div>
+                <div className="description-text" style={{fontSize: "3vh", marginTop: "3vh"}}>{text[imageIndex]}</div>
         </div>
     );
 };
