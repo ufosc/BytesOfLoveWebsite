@@ -90,14 +90,14 @@ const Home = () => {
             <div className="download-links-box">
                 <div className="flex w-3/12 items-center justify-center">
                     <div className="os-type text-2xl m-4 w-1/2 text-center">Mac</div>
-                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="download-button-color hover:bg-dark-purple text-white font-bold py-2 px-4 rounded m-4">
+                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=16VfzKKgn0-ovhCNBRn_mReedXgiNuufq', '_blank')} className="download-button-color hover:bg-dark-purple text-white font-bold py-2 px-4 rounded m-4">
                          <a>Download</a>
                     </button>
                 </div>
 
                 <div className="flex w-3/12 items-center justify-center">
                     <div className="os-type text-2xl m-4 w-1/2 text-center">Linux</div>
-                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')} className="download-button-color bg-blue-500 hover:bg-dark-purple text-white font-bold py-2 px-4 rounded m-4">
+                    <button onClick={ () => window.open('https://drive.google.com/uc?export=download&id=18F880rXGTLcKoBRBpJhsoQprRQiHl6Y9', '_blank')} className="download-button-color bg-blue-500 hover:bg-dark-purple text-white font-bold py-2 px-4 rounded m-4">
                          <a>Download</a>
                     </button>
                 </div>
