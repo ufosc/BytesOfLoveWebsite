@@ -12,7 +12,7 @@
 }
 
 /* Hero Image Styles */
-.picture-carousel {
+.picture-carousel { 
     position: relative;
     align-self: center;
     text-align: center;
@@ -34,6 +34,10 @@
 #descDivi{
     width: 20%;
     margin: auto;
+}
+
+#download #descDivi{
+    padding-bottom: 30px;
 }
 
 #aboutHeading {
@@ -77,6 +81,8 @@
 #downloadCol{
     columns: 3;
     padding-bottom: 30px;
+
+    margin: 10px;
 }
 
 .column{
@@ -123,35 +129,3 @@
 #musicButton{
     z-index: 1;
 }
-
-/* 
-.download-title {
-    position: relative;
-    margin-bottom: 1vh;
-    align-self: center;
-    font-size: 7.5vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #D184D7;
-}
-
-.download-links-box {
-    position: relative;
-    margin-bottom: 10vh;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}   
-
-.download-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.download-button-color {
-    background-color: rgba(156,71,150,255);
-}
-
-.os-type {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */

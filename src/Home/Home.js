@@ -78,21 +78,8 @@ const Home = () => {
                 <div id="description-text">"Bytes of Love" is an engaging open-source dating simulator by the UF Open Source Club. Development began in Fall 2023 and continues actively. This visual novel offers immersive romantic storylines and character interactions, and it's compatible with Mac, Linux, and Windows. The game reflects the collaborative spirit and creativity of the club's contributors.</div>
             </div>
 
-
-            <div id="meetChars">
-                <h2 id="meetHeading">Meet Our Charactetrs!</h2>
-                <div className="Carousel border-4 border-custom-purple w-3/5 ">
-                    <Carousel imageIndex={currentImageIndex} />
-                    <div className="button-container">
-                        <Carousel_Rotate_Left onRotate={handleRotateLeft} />
-                        <Carousel_Rotate_Right onRotate={handleRotateRight} />
-                    </div>
-                </div>
-            </div>
-            
-
             <div id="download">
-                
+                <hr id="descDivi"></hr>
                 <h2 id="aboutHeading" className="download-title">Download <span id="bytesName">Bytes of Love</span> Now!</h2>
                 <div id="downloadCol">
 
@@ -122,6 +109,19 @@ const Home = () => {
 
                 </div>
             </div>
+
+
+            <div id="meetChars">
+                <h2 id="meetHeading">Meet Our Charactetrs!</h2>
+                <div className="Carousel border-4 border-custom-purple w-3/5 ">
+                    <Carousel imageIndex={currentImageIndex} />
+                    <div className="button-container">
+                        <Carousel_Rotate_Left onRotate={handleRotateLeft} />
+                        <Carousel_Rotate_Right onRotate={handleRotateRight} />
+                    </div>
+                </div>
+            </div>
+        
 
             <button onClick={toggleMute} className="fixed bottom-4 right-4 bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded flex items-center justify-center rounded " id="musicButton">
             {isMuted ? (
