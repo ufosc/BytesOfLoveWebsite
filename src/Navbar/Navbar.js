@@ -1,27 +1,51 @@
-import {useNavigate} from "react-router-dom";
-import "./Navbar.css"
+import { useNavigate } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <div className="header-container flex flex-row justify-between w-full border-b-2 border-custom-purple">
-            <img src="https://docs.ufosc.org/img/logo.png" class="ml-4 w-12 h-12 items-left justify-left cursor-pointer" onClick={ () => window.open('https://ufosc.org/', '_blank')}/>
-            <div class="flex justify-end flex-grow items-center">
-            <div className="header-option-container" onClick={() => {navigate(`/`)}}>
-                <div className="header-option-text">Home</div>
-            </div>
-
-            <div className="header-option-container" onClick={() => {navigate(`/download`)}}>
-                <div className="header-option-text">Download</div>
-            </div>
-
-            <div className="header-option-container" onClick={() => {navigate(`/about`)}}>
-                <div className="header-option-text">About</div>
-            </div>
-            </div>
+  return (
+    <div className="header-container flex flex-row w-full border-b-2 items-center border-custom-purple bg-[#fccbff]">
+      <div className="logo-container flex flex-row items-center">
+        <img
+            src="https://docs.ufosc.org/img/logo.png"
+            class="logo"
+            onClick={() => window.open("https://ufosc.org/", "_blank")}
+            alt="UF OSC Logo"
+        />
         </div>
-    )
-}
+        
 
-export default Navbar
+      <div class="flex flex-row justify-evenly items-center sm:gap-16 px-10 gap-6 ml-auto">
+        <div
+          className="header-option-container"
+          onClick={() => {
+            navigate(`/`);
+          }}
+        >
+          <div className="header-option-text">Home</div>
+        </div>
+
+        <div
+          className="header-option-container"
+          onClick={() => {
+            navigate(`/download`);
+          }}
+        >
+          <div className="header-option-text">Download</div>
+        </div>
+
+        <div
+          className="header-option-container"
+          onClick={() => {
+            navigate(`/about`);
+          }}
+        >
+          <div className="header-option-text">About</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
