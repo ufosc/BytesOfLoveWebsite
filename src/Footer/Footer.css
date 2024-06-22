@@ -1,0 +1,21 @@
+#footerBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(252,203,255,255);
+}
+
+#footerImage{
+    width: 80px;
+}
+
+#githubLogo{
+    width: 40px;
+    align-items: center;
+}
+
+#socials{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+}
