@@ -56,6 +56,11 @@ const Download = () => {
         <div className="download-page-container">
             <Navbar />
 
+            <div className="download-title">Game Engine</div>
+            <div id="description-text">
+                BytesOfLove is built using Ren'Py, a popular visual novel engine. Ren'Py allows for rich storytelling experiences through its easy-to-use scripting language and powerful features.
+            </div>
+
             <div className="download-title">
                 How to Play
             </div>
