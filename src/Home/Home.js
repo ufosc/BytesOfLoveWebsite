@@ -69,7 +69,7 @@ const Home = () => {
             <Navbar />
 
             <div class="picture-carousel">
-                <img src="main_menu.gif" alt="bolCover" class=""/>
+                <img src="main_menu.gif" alt="bolCover" class="" id="heroImage"/>
             </div>
 
             <div id="descriptionSection">
