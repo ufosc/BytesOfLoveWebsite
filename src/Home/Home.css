@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+#heroImage{
+    width: 100%;
+}
+
 /* Hero Image Styles */
 .picture-carousel { 
     position: relative;
