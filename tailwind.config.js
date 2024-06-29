@@ -6,14 +6,13 @@ module.exports = {
       colors: {
         'custom-purple': '#9C4796',
         'light-purple': '#B266B2',
-        'dark-purple': '#7A2C7A',
+        'dark-purple': '#7A2C7A'
       },
       borderColor: theme => ({
         ...theme('colors'),
-        'custom-purple': '#9C4796',  // Reusing the custom color for border
+        'custom-purple': '#9C4796' // Reusing the custom color for border
       })
     }
   },
-  plugins: [],
+  plugins: []
 }
-
