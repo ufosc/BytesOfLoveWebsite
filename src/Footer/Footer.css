@@ -9,6 +9,11 @@
     width: 80px;
 }
 
+#githubLogo{
+    width: 40px;
+    align-items: center;
+}
+
 #socials{
     display: flex;
     flex-basis: 50%;

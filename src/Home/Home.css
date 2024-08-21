@@ -1,4 +1,4 @@
-* {
+*{
     font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
 }
 
@@ -7,10 +7,27 @@
     display: flex;
     flex-direction: column;
     background-color: #FEF7D8;
+
     text-align: center;
 }
 
-#descriptionSection {
+#heroImage{
+    width: 100%;
+}
+
+/* Hero Image Styles */
+.picture-carousel { 
+    position: relative;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+    width: 100vw;
+    /* max-height: 80vh !important; */
+    /* height: 65vh; */
+    /* outline: 2px solid red;  */
+}
+
+#descriptionSection{
     background: #D184D7;
     margin: 30px;
     border-radius: 60px;
@@ -18,19 +35,19 @@
     padding: 50px;
 }
 
-#descDivi {
+#descDivi{
     width: 20%;
     margin: auto;
 }
 
-.home-page-container hr {
+#download #descDivi{
     padding-bottom: 30px;
 }
 
 #aboutHeading {
     font-family: cursive;
     font-size: 4em;
-
+    
 }
 #description-text {
     margin-top: 1vh;
@@ -39,37 +56,40 @@
     font-size: 2.5vh;
 }
 
-.home__meet-chars {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#meetChars{
+    margin: 30px;
 }
 
-#meetHeading {
+#meetHeading{
     font-family: cursive;
     font-size: 4em;
+
     padding-left: 20px;
     padding-right: 20px;
+
+
     align-content: center;
     align-items: center;
 }
 
-#bytesName {
+#bytesName{
     color: #D184D7;
     font-family: cursive;
 }
 
-#download #aboutHeading {
+/* Download Styles */
+#download #aboutHeading{
     padding-bottom: 50px;
 }
 
-.home__download__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#downloadCol{
+    columns: 3;
+    padding-bottom: 30px;
+
+    margin: 10px;
 }
 
-.home__download__cards__column {
+.column{
     background-color: white;
     padding: 30px;
     margin-left: 20px;
@@ -80,25 +100,36 @@
     justify-content: center;
     flex-direction: column;
     height: 40vh;
+
     align-items: center;
 }
 
-.home__download__cards__column__label {
-    font-size: 40px;
-    padding-bottom: 20px;
+.logo{
+    height: 8vh;
 }
 
-.home__download__cards__column__button {
+#downloadLabel{
+    
+    font-size: 40px;
+    padding-bottom: 20px;
+    
+}
+
+#downloadButton{
+
+
     background: #C0419D;
     color: white;
     padding: 10px;
     border-radius: 30px;
     margin-top: 10px;
+
     height: 7vh;
     font-size: 21px;
-    width: 200px;
+
+    width: 100%
 }
 
-#musicButton {
+#musicButton{
     z-index: 1;
 }

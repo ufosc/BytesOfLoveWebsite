@@ -1,56 +1,63 @@
-.carousel-card {
-    padding: 50px;
-    border-radius: 30px;
-    border: 1px solid rgb(156 71 150);
-    margin: 15px;
+/* Base styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.Carousel {
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.carousel {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 25px;
+    margin: 50px auto;
+    position: relative; /* Relative positioning for the button container */
+    width: 80vw; /* Set a fixed width for the carousel */
+    /* height: 80vh; Set a fixed height for the carousel */
+    overflow: hidden; /* Hide overflow to keep images within the container */ 
+    border-radius: 5%;
+    background-size: cover;
+    background-size: no-repeat;
+
 }
 
-.carousel__body {
-    display: flex;
+.Carousel img {
+    width: 50vh; /* Ensure the image covers the container's width */
+    object-fit: cover;
+    object-position: 55% 50%;
     justify-content: center;
+    align-items: center;
 }
 
-.carousel-button {
-    color: black;
-    font-size: 60px;
-    min-width: 20px;
+.left-button button, .right-button button {
+    background-color: #4a5568;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 16px;
 }
 
-.carousel__slide-indices {
-    display: grid;
-    width: fit-content;
-    margin: 0 auto;
+.left-button img, .right-button img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures the image doesn't have extra space around it */
+    margin-top: 30px;
 }
 
-.carousel__slide-index, .carousel__slide-index--selected {
-    margin: 5px;
-    margin-top: 15px;
-    border-radius: 100%;
-    width: 13px;
-    height: 13px;
-    border: 1.5px solid grey;
-    background: none;
+.button-container {
+    display: flex;
+    justify-content: bottom;
+    align-items: bottom;
+    position: absolute;
+    width: 180%;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
-.carousel__slide-index:hover, .carousel__slide-index--selected:hover {
-    border: 1.5px solid black;
-    background: black;
+/* Custom spacing between buttons using margin */
+.left-button, .right-button{
+    margin-right: auto; /* Pushes the button to the left */
+    margin-left: auto; /* Pushes the button to the left */
 }
 
-.carousel__slide-index:active, .carousel__slide-index--selected:active {
-    transform: translateY(3px);
-}
-
-.carousel__slide-index--selected {
-    background: grey;
-}
