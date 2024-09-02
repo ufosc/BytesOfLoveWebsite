@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, images} from '../Carousel/Carousel';
+import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, Carousel_Navigation_Buttons, images} from '../Carousel/Carousel';
 
 
 const Home = () => {
@@ -122,6 +122,7 @@ const Home = () => {
                         <Carousel_Rotate_Left onRotate={handleRotateLeft} />
                         <Carousel_Rotate_Right onRotate={handleRotateRight} />
                     </div>
+                    <Carousel_Navigation_Buttons onUse={handleButtonNav} activeIndex={currentImageIndex} />
                 </div>
             </div>
         

@@ -30,7 +30,7 @@ export const text = [
 
 export const Carousel = ({ imageIndex }) => {
     return (
-        <div className="Carousel">
+        <div key={imageIndex} className="Carousel">
                 <div className="heading-text" style={{fontSize: "4vh", marginTop: "3vh", marginBottom: "2vh", fontFamily: "cursive"}}>{name[imageIndex]}</div>
                 <img class="h-auto" src={images[imageIndex]} alt={`Displaying ${images[imageIndex]}`} />
                 <div className="description-text" style={{fontSize: "3vh", marginTop: "3vh"}}>{text[imageIndex]}</div>
@@ -58,11 +58,13 @@ export const Carousel_Rotate_Right = ({ onRotate }) => {
     );
 };
 
-export const Carousel_Navigation_Buttons = ({ onClick }) => {
+export const Carousel_Navigation_Buttons = ({ onUse, activeIndex }) => {
     return (
         <div className="nav-buttons-container">
-            {images.map((img, index) => (
-                <button key={index} onClick={onClick(index)}></button>
+            {images.map((_, index) => (
+                <button className="nav-button" key={index} onClick={() => onUse(index)} style={{
+                    backgroundColor: activeIndex === index ? 'purple' : '#000000',
+                }}></button>
             ))}
         </div>
     );

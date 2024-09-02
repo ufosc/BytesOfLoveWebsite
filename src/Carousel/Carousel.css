@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: 50px auto 10px auto;
     position: relative; /* Relative positioning for the button container */
     width: 80vw; /* Set a fixed width for the carousel */
     /* height: 80vh; Set a fixed height for the carousel */
@@ -18,7 +18,6 @@ body {
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
-
 }
 
 .Carousel img {
@@ -61,3 +60,14 @@ body {
     margin-left: auto; /* Pushes the button to the left */
 }
 
+.nav-button {
+    background-color: #4a5568;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.25rem;
+}
+
+.nav-buttons-container{
+    margin-bottom: 40px;
+}
