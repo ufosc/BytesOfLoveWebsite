@@ -20,6 +20,7 @@ const Home = () => {
     };
     
     const handleButtonNav = (selectedIndex) => {
+        console.log(selectedIndex);
         setCurrentImageIndex(selectedIndex);
     }
 

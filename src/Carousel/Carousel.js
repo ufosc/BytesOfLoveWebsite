@@ -28,6 +28,11 @@ export const text = [
     "Looks Good To Merge, Let's Get The Money, Let's Guzzle That Milk",
 ]   
 
+const getNavIndexesArray = () => {
+    // Helper function to turn images.length, n (ex. 3), into an array series of integers from 0 to n (ex. [0, 1, 2])
+    return Array.from({ length: images.length }, (_, i) => i);
+}
+
 export const Carousel = ({ imageIndex }) => {
     return (
         <div className="Carousel">
