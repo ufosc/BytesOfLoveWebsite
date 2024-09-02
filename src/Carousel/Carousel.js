@@ -10,6 +10,12 @@ export const images = [
     "images/LGTM.png",
 ];
 
+// Preload the images to reduce the chance of oddities occuring on the carousel
+for (const image of images) {
+    const imageElement = new Image();
+    imageElement.src = image;
+  }
+
 export const name = [
      "C++",
      "Java",
