@@ -28,11 +28,6 @@ export const text = [
     "Looks Good To Merge, Let's Get The Money, Let's Guzzle That Milk",
 ]   
 
-const getNavIndexesArray = () => {
-    // Helper function to turn images.length, n (ex. 3), into an array series of integers from 0 to n (ex. [0, 1, 2])
-    return Array.from({ length: images.length }, (_, i) => i);
-}
-
 export const Carousel = ({ imageIndex }) => {
     return (
         <div className="Carousel">
@@ -61,7 +56,17 @@ export const Carousel_Rotate_Right = ({ onRotate }) => {
             </button>
         </div>
     );
-};  
+};
+
+export const Carousel_Navigation_Buttons = ({ onClick }) => {
+    return (
+        <div className="nav-buttons-container">
+            {images.map((img, index) => (
+                <button key={index} onClick={onClick(index)}></button>
+            ))}
+        </div>
+    );
+}
 
 
 
