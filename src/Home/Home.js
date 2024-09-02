@@ -10,6 +10,7 @@ const Home = () => {
     const audioRef = useRef(null); // Ref for the audio element     
     const [videoPlaying, setVideoPlaying] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [fade, setFade] = useState(false);
 
     const handleRotateLeft = () => {
         setCurrentImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
@@ -20,8 +21,25 @@ const Home = () => {
     };
     
     const handleButtonNav = (selectedIndex) => {
-        console.log(selectedIndex);
         setCurrentImageIndex(selectedIndex);
+    }
+
+    const handleFadeArrows = (movementFunction) => {
+        setFade(true);
+        setTimeout(() => {
+            movementFunction();
+            setFade(false);
+        }, 500)
+    }
+
+    const handleFadeNav = (movementFunction, selectedIndex) => {
+        if(!(selectedIndex === currentImageIndex)){
+            setFade(true);
+            setTimeout(() => {
+                movementFunction(selectedIndex);
+                setFade(false);
+            }, 0.75 * 1000)
+        }
     }
 
     const toggleMute = () => {
@@ -117,12 +135,12 @@ const Home = () => {
             <div id="meetChars">
                 <h2 id="meetHeading">Meet Our Charactetrs!</h2>
                 <div className="Carousel border-4 border-custom-purple w-3/5 ">
-                    <Carousel imageIndex={currentImageIndex} />
+                    <Carousel imageIndex={currentImageIndex} fade={fade}/>
                     <div className="button-container">
-                        <Carousel_Rotate_Left onRotate={handleRotateLeft} />
-                        <Carousel_Rotate_Right onRotate={handleRotateRight} />
+                        <Carousel_Rotate_Left fadeFunction={() => handleFadeArrows(handleRotateLeft)} />
+                        <Carousel_Rotate_Right fadeFunction={() => handleFadeArrows(handleRotateRight)} />
                     </div>
-                    <Carousel_Navigation_Buttons onUse={handleButtonNav} activeIndex={currentImageIndex} />
+                    <Carousel_Navigation_Buttons fadeFunction={handleFadeNav} movementFunction={handleButtonNav} activeIndex={currentImageIndex} />
                 </div>
             </div>
         
