@@ -19,7 +19,9 @@ const Home = () => {
         setCurrentImageIndex(prevIndex => (prevIndex + 1) % images.length);
     };
     
-
+    const handleButtonNav = (selectedIndex) => {
+        setCurrentImageIndex(selectedIndex);
+    }
 
     const toggleMute = () => {
         setIsMuted(!isMuted);
