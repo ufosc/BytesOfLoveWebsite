@@ -10,7 +10,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto auto 10px auto;
-    position: relative; /* Relative positioning for the button container */
     width: fit-content;
     height: fit-content;
     
@@ -31,8 +30,8 @@ body {
 .left-button button, .right-button button {
     /* base button layout */
     background-color: transparent;
-    width: 4rem;
-    height: 4rem;
+    width: 5vh;
+    height: 5vh;
     border-radius: 50%;
 
     /* centering image in button */
@@ -61,7 +60,7 @@ body {
 }
 
 .left-button img, .right-button img {
-    width: 30px; /* Adjust the width as needed */
+    width: auto; /* Adjust the width as needed */
     height: auto; /* Maintains the aspect ratio */
 }
 
@@ -71,15 +70,22 @@ body {
     align-items: bottom;
     position: absolute;
     overflow: hidden;
-    width: 180%;
+    width: 100%;
+    height: fit-content;
     padding: 20px 0;
     box-sizing: border-box;
 }
 
 /* Custom spacing between buttons using margin */
-.left-button, .right-button{
-    margin-right: auto; /* Pushes the button to the left */
-    margin-left: auto; /* Pushes the button to the left */
+.left-button{
+    position: relative;
+    left: 2%; /* the left button should have a 2% margin from the border of the box */
+}
+
+/* Custom spacing between buttons using margin */
+.right-button{
+    position: relative;
+    left: calc(98% - 10vh); /*the right button also needs a 2% border from the box, but life isn't easy. this is the formula for it: 100% - [margin_width] - 2*[button_size] */
 }
 
 .nav-button {
