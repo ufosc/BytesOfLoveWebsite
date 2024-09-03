@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto auto 10px auto;
+    margin: auto auto auto auto;
     width: fit-content;
     height: fit-content;
     
@@ -112,6 +112,6 @@ body {
 }
 
 .nav-buttons-container{
-    margin-top: auto;
-    margin-bottom: 2vh;
+    position: absolute;
+    bottom: 1vh;
 }
