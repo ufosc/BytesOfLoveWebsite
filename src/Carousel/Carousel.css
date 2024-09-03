@@ -30,16 +30,18 @@ body {
 }
 
 .left-button button, .right-button button {
-    background-color: black;
-    color: white;
+    /* base button layout */
+    background-color: transparent;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    cursor: pointer;
+
+    /* centering image in button */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.5s ease;
+
+    /* ring animation */
     border: 0.2rem solid transparent;
     padding: 0.2rem;
     background-clip: content-box;
@@ -47,7 +49,7 @@ body {
     transition: 
         transform 0.5s ease, 
         border 0.5s ease, 
-        background-color 0.1s ease;
+        background-color 0.2s ease;
 }
 
 .left-button button:hover, .right-button button:hover {
@@ -81,10 +83,13 @@ body {
 }
 
 .nav-button {
+    /* base nav button layout */
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
     margin: 0 0.25rem 0 0.25rem;
+
+    /* ring animation */
     border: 0.2rem solid transparent;
     padding: 0.2rem;
     background-clip: content-box;
