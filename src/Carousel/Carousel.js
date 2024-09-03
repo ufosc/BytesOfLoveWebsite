@@ -38,9 +38,9 @@ export const Carousel = ({ imageIndex, fade }) => {
     return (
         <div className="Carousel">
                 <div className="heading-text" style={{
-                    fontSize: "4vh", 
+                    fontSize: "calc(4vw + 2vh)",
                     marginTop: "3vh", 
-                    marginBottom: "2vh", 
+                    marginBottom: "2vh",
                     fontFamily: "cursive",
                     opacity: fade ? 0 : 1, 
                     transition: 'opacity 0.5s ease-in-out',
@@ -50,8 +50,8 @@ export const Carousel = ({ imageIndex, fade }) => {
                     opacity: fade ? 0 : 1,
                     transition: 'opacity 0.5s ease-in-out',}}/>
                 <div className="description-text" style={{
-                    fontSize: "3vh", 
-                    marginTop: "3vh", 
+                    fontSize: "calc(2vw + 1vh)", 
+                    padding: "4vh",
                     opacity: fade ? 0 : 1, 
                     transition: 'opacity 0.5s ease-in-out',}}>{text[imageIndex]}</div>
         </div>

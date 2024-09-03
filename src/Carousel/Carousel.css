@@ -5,23 +5,22 @@ body {
 }
 
 .Carousel {
-    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto 10px auto;
+    margin: auto auto 10px auto;
     position: relative; /* Relative positioning for the button container */
-    width: 80vw; /* Set a fixed width for the carousel */
-    /* height: 80vh; Set a fixed height for the carousel */
-    overflow: hidden; /* Hide overflow to keep images within the container */ 
+    width: fit-content;
+    height: fit-content;
+    
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
 }
 
 .Carousel img {
-    width: 50vh; /* Ensure the image covers the container's width */
+    width: calc(15vw + 15vh); /* Ensure the image covers the container's width */
     object-fit: cover;
     object-position: 55% 50%;
     justify-content: center;
@@ -71,6 +70,7 @@ body {
     justify-content: bottom;
     align-items: bottom;
     position: absolute;
+    overflow: hidden;
     width: 180%;
     padding: 20px 0;
     box-sizing: border-box;
@@ -106,5 +106,6 @@ body {
 }
 
 .nav-buttons-container{
-    margin-bottom: 40px;
+    margin-top: auto;
+    margin-bottom: 2vh;
 }

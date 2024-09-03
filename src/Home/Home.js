@@ -135,7 +135,7 @@ const Home = () => {
 
             <div id="meetChars">
                 <h2 id="meetHeading">Meet Our Charactetrs!</h2>
-                <div className="Carousel border-4 border-custom-purple w-3/5 ">
+                <div className="Carousel-Wrapper border-4 border-custom-purple w-3/5 ">
                     <Carousel imageIndex={currentImageIndex} fade={fade}/>
                     <div className="button-container">
                         <Carousel_Rotate_Left fadeFunction={() => handleFadeArrows(handleRotateLeft)} />
