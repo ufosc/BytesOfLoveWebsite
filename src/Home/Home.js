@@ -11,6 +11,7 @@ const Home = () => {
     const [videoPlaying, setVideoPlaying] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fade, setFade] = useState(false);
+    const fadeTimeout = 0.75 * 1000;
 
     const handleRotateLeft = () => {
         setCurrentImageIndex(prevIndex => (prevIndex - 1 + images.length) % images.length);
@@ -29,7 +30,7 @@ const Home = () => {
         setTimeout(() => {
             movementFunction();
             setFade(false);
-        }, 500)
+        }, fadeTimeout)
     }
 
     const handleFadeNav = (movementFunction, selectedIndex) => {
@@ -38,7 +39,7 @@ const Home = () => {
             setTimeout(() => {
                 movementFunction(selectedIndex);
                 setFade(false);
-            }, 0.75 * 1000)
+            }, fadeTimeout)
         }
     }
 
