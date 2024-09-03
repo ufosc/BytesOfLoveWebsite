@@ -5,44 +5,63 @@ body {
 }
 
 .Carousel {
-    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
-    position: relative; /* Relative positioning for the button container */
-    width: 80vw; /* Set a fixed width for the carousel */
-    /* height: 80vh; Set a fixed height for the carousel */
-    overflow: hidden; /* Hide overflow to keep images within the container */ 
+    margin: auto auto auto auto;
+    width: fit-content;
+    height: fit-content;
+    
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
-
 }
 
 .Carousel img {
-    width: 50vh; /* Ensure the image covers the container's width */
+    width: calc(15vw + 15vh); /* Ensure the image covers the container's width */
     object-fit: cover;
     object-position: 55% 50%;
     justify-content: center;
     align-items: center;
+    transition: 0.5s ease;
 }
 
 .left-button button, .right-button button {
-    background-color: #4a5568;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 8px 16px;
+    /* base button layout */
+    background-color: transparent;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+
+    /* centering image in button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* ring animation */
+    border: 0.2rem solid transparent;
+    padding: 0.2rem;
+    background-clip: content-box;
+
+    transition: 
+        transform 0.5s ease, 
+        border 0.5s ease, 
+        background-color 0.2s ease;
+}
+
+.left-button button:hover, .right-button button:hover {
+    border: 0.2rem solid purple;
+    transform: scale(1.3);
+}
+
+.left-button button:active, .right-button button:active {
+    background-color: purple;
 }
 
 .left-button img, .right-button img {
-    width: 30px; /* Adjust the width as needed */
+    width: auto; /* Adjust the width as needed */
     height: auto; /* Maintains the aspect ratio */
-    display: block; /* Ensures the image doesn't have extra space around it */
-    margin-top: 30px;
 }
 
 .button-container {
@@ -50,14 +69,49 @@ body {
     justify-content: bottom;
     align-items: bottom;
     position: absolute;
-    width: 180%;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
     padding: 20px 0;
     box-sizing: border-box;
 }
 
 /* Custom spacing between buttons using margin */
-.left-button, .right-button{
-    margin-right: auto; /* Pushes the button to the left */
-    margin-left: auto; /* Pushes the button to the left */
+.left-button{
+    position: relative;
+    left: 2%; /* the left button should have a 2% margin from the border of the box */
 }
 
+/* Custom spacing between buttons using margin */
+.right-button{
+    position: relative;
+    left: calc(98% - 10vh); /*the right button also needs a 2% border from the box, but life isn't easy. this is the formula for it: 100% - [margin_width] - 2*[button_size] */
+}
+
+.nav-button {
+    /* base nav button layout */
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 0.25rem 0 0.25rem;
+
+    /* ring animation */
+    border: 0.2rem solid transparent;
+    padding: 0.2rem;
+    background-clip: content-box;
+    
+    transition: 
+        transform 0.5s ease, 
+        border 0.5s ease, 
+        background-color 0.5s ease;
+}
+
+.nav-button:hover{
+    border: 0.2rem solid purple;
+    transform: scale(1.3);
+}
+
+.nav-buttons-container{
+    position: absolute;
+    bottom: 1vh;
+}
