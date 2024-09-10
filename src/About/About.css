@@ -45,6 +45,8 @@
 .credit-name {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 4vh;
+  text-align: center;
+
   @media (max-width: 767px) {
     font-size: 2.5vh;
   }
@@ -53,6 +55,7 @@
 .credit-title {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2.5vh;
+  text-align: center;
 
   @media (max-width: 767px) {
     font-size: 2vh;
