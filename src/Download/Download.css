@@ -7,9 +7,11 @@
 }
 
 .download-title {
+    margin-top: 8vh;
     position: relative;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
     align-self: center;
+    text-align: center;
     font-size: 7.5vh;
     font-family: cursive;
     color: #D184D7;
@@ -17,7 +19,6 @@
 
 .download-links-box {
     position: relative;
-    margin-bottom: 10vh;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,12 @@
     background-color: rgba(156,71,150,255);
 }
 
+#downloadButton {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
 .os-type {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
