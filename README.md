@@ -42,6 +42,8 @@ If you'd like to run the website locally on your machine, follow these steps:
 
 After running this command, the website should be accessible via http://localhost:3000 or another port specified in the console.
 
+## Contributing 
+
 For more details on contributing to the project, please visit [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credits 
