@@ -15,3 +15,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b00719f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #6b0071b2;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 211, 244);
+}
+/* Alternate scrollbar for browsers that dont support webkit such as firefox */
+@supports not (-webkit-text-stroke: chocolate){
+  * {
+    scrollbar-width:auto; 
+    scrollbar-color: #6b00719f rgb(255, 211, 244);
+  } 
+}
+
