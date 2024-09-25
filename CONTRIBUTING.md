@@ -4,6 +4,8 @@ Thank you for considering contributing to the Bytes of Love website! Here are so
 
 ## How to Contribute
 
+If you want to find a good place to start, you can check out our current [issues](https://github.com/ufosc/BytesOfLoveWebsite/issues). Once you know how you'd like to contribute, you can follow the following steps.
+
 1. **Fork the repository**: Click the "Fork" button at the top right of the repo.
 2. **Clone your fork**: 
    ```bash
