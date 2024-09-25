@@ -2,7 +2,9 @@
 
 Welcome to the website for **Bytes of Love**!
 
-This website allows players to learn about what Bytes of Love is and get a download of the current game for FREE!
+Bytes of Love is an engaging dating simulator with immersive romantic storylines and and character interactions.
+
+This website allows players to learn more about what Bytes of Love is and get a download of the current game for FREE!
 
 ## Website Link
 
@@ -39,6 +41,8 @@ If you'd like to run the website locally on your machine, follow these steps:
    ``` 
 
 After running this command, the website should be accessible via http://localhost:3000 or another port specified in the console.
+
+For more details on contributing to the project, please visit [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credits 
 
