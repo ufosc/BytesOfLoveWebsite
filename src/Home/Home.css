@@ -156,15 +156,6 @@
 }
 
 @media (max-width: 600px) {
-    .logo{
-        height: 8vh;
-    }
-    
-    .downloadLabel{
-        font-size: calc(4vw + 1vh);
-        padding-bottom: 20px;
-        
-    }
     
     #downloadButton {
         font-size: 0;
@@ -173,12 +164,10 @@
     }
     
     .scaled-svg {
-        
         transform: translate(0, 0%);
     }
 
     #downloadCol{
-
         display: flex;
         flex-wrap:wrap;
         align-items: center;
@@ -188,7 +177,6 @@
 
     .column{
         min-width: 75vw;
-        
     }
 
 }

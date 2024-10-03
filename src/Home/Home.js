@@ -3,9 +3,6 @@ import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
 
 import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, Carousel_Navigation_Buttons, images} from '../Carousel/Carousel';
 
@@ -83,8 +80,7 @@ const Home = () => {
                         <img class="logo" src="images/Linux_logo_PNG4.png"></img>
                         <h2 id="downloadLabel">Linux</h2>
                         <button id="downloadButton" onClick={ () => window.open('https://drive.google.com/uc?export=download&id=1lHRB4EOvokiN0LybZw75ij7rI1a_WWZ9', '_blank')}>
-                            {// <FontAwesomeIcon icon="fa-regular fa-arrow-down" />
-                            }
+                            
                             <svg class = "scaled-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="30" height="30">
                                 <path style={{ fill: '#232326', stroke: '#232326', strokeWidth: 2 }} d="m18.294 16.793-5.293 5.293V1h-1v21.086l-5.295-5.294-.707.707L12.501 24l6.5-6.5-.707-.707z"/>
                             </svg>
