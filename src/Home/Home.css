@@ -87,6 +87,8 @@
     padding-bottom: 30px;
 
     margin: 10px;
+    
+    
 }
 
 .column{
@@ -127,11 +129,11 @@
     height: 7vh;
     font-size: 21px;
 
-    width: 100%
-}
+    width: 100%;
 
-#downloadButton a{
-    font-size: calc(2vw + 0.5vh);
+    display: flex;
+    justify-content: center;
+    
 }
 
 #musicButton{
@@ -152,3 +154,50 @@
     background-size: cover;
     background-size: no-repeat;
 }
+
+@media (max-width: 600px) {
+    .logo{
+        height: 8vh;
+    }
+    
+    .downloadLabel{
+        font-size: calc(4vw + 1vh);
+        padding-bottom: 20px;
+        
+    }
+    
+    #downloadButton {
+        font-size: 0;
+        min-width: 75px;
+        min-height: 25px;
+    }
+    
+    .scaled-svg {
+        
+        transform: translate(0, 0%);
+    }
+
+    #downloadCol{
+
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .column{
+        min-width: 75vw;
+        
+    }
+
+}
+
+.scaled-svg {
+    transform: scale(0.9); /* Scale down by 90% */
+    transform-origin: top left; /* Adjust the origin if needed */
+    display: flex;
+    min-width: 25px;
+    min-height: 25px;
+    transform: translate(0, 0%);
+  }
