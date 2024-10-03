@@ -24,6 +24,7 @@
   margin-top: 2.5vh;
   margin-bottom: 5vh;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .credit-cell {
