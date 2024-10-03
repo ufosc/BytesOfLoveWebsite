@@ -34,6 +34,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2vh 1vw;
+  text-align: center;
 }
 
 .credit-cell img {
