@@ -62,8 +62,9 @@
 }
 
 .thankyou-box {
-  margin-top: 5vh;
+  margin-top: 2vh;
   align-self: center;
   text-align: center;
   width: 70vw;
+  min-height:21vh;
 }

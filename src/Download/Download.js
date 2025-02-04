@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Navbar from "../Navbar/Navbar" 
 import "./Download.css";
 import "../Home/Home.css";
-
+import Footer from "../Footer/Footer";
 
 const Download = () => {
     const [isMuted, setIsMuted] = useState(false); // Initialize as muted
@@ -42,6 +42,9 @@ const Download = () => {
 
               
                 </div>
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
         </div>
     )

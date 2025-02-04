@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import "../Home/Home.css";
 import "./About.css";
+import Footer from "../Footer/Footer";
 
 const About = () => {
   const [isMuted, setIsMuted] = useState(false); // Initialize as muted
@@ -226,12 +227,12 @@ const About = () => {
         <div className="credit-name">
           Thank you to everyone who contributed to Bytes of Love, including
           those whose names may not have been mentioned. This is an open source
-          visual novel so anyone is welcome to help! LGTM.
+                  visual novel so anyone is welcome to help! LGTM.
         </div>
       </div>
 
       
-
+      <Footer/>
       
     </div>
   );
