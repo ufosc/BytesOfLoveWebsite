@@ -4,6 +4,16 @@
   flex-direction: column;
   min-height: 100vh;
   background-color: rgba(252, 236, 168, 255);
+  
+}
+
+#first-credit{
+ margin-top: 5vh;
+}
+
+.credit-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .credit-row-title {
@@ -63,7 +73,9 @@
 
 .thankyou-box {
   margin-top: 5vh;
+  margin-bottom: 20vh;
   align-self: center;
   text-align: center;
   width: 70vw;
+  
 }

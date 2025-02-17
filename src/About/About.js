@@ -18,7 +18,8 @@ const About = () => {
     <div className="about-page-container">
       <Navbar />
 
-      <div className="credit-row-title">Artists</div>
+      <div id="first-credit" className="credit-container">
+        <div className="credit-row-title">Artists</div>
       <div className="credit-row">
         <a
           className="credit-cell"
@@ -51,52 +52,57 @@ const About = () => {
           <div className="credit-title">Background Artist</div>
         </a>
       </div>
-
-      <div className="credit-row-title">Writers</div>
-      <div className="credit-row">
-        <a
-          className="credit-cell"
-          href="https://www.linkedin.com/in/wilson-goins/"
-          target="_blank"
-        >
-          <img className="border-4 border-custom-purple" src="credits/Wilson.jpg" alt="Wilson Picture" />
-          <div className="credit-name">Wilson Goins</div>
-          <div className="credit-title">Lead Writer</div>
-        </a>
-
-        <a
-          className="credit-cell"
-          href="https://www.linkedin.com/in/edward-roshko/"
-          target="_blank"
-        >
-          <img className="border-4 border-custom-purple" src="credits/Eddy.jpg" alt="Eddy Picture" />
-          <div className="credit-name">Edward Roshko</div>
-          <div className="credit-title">Script Writer</div>
-        </a>
-
-        <a
-          className="credit-cell"
-          href="https://www.linkedin.com/in/sarah-tran1029/"
-          target="_blank"
-        >
-          <img className="border-4 border-custom-purple" src="credits/Sarah.jpg" alt="Sarah Picture" />
-          <div className="credit-name">Sarah Tran</div>
-          <div className="credit-title">Script Editor</div>
-        </a>
-
-        <a
-          className="credit-cell"
-          href="https://www.linkedin.com/in/tikiri-ekanayake/"
-          target="_blank"
-        >
-          <img className="border-4 border-custom-purple" src="credits/Tikiri.jpg" alt="Tikiri Picture" />
-          <div className="credit-name">Tikiri Ekanayake</div>
-          <div className="credit-title">Script Editor</div>
-        </a>
       </div>
 
-      <div className="credit-row-title">Developers</div>
-      <div className="credit-row">
+      <div className="credit-container">
+        <div className="credit-row-title">Writers</div>
+        <div className="credit-row">
+          <a
+            className="credit-cell"
+            href="https://www.linkedin.com/in/wilson-goins/"
+            target="_blank"
+          >
+            <img className="border-4 border-custom-purple" src="credits/Wilson.jpg" alt="Wilson Picture" />
+            <div className="credit-name">Wilson Goins</div>
+            <div className="credit-title">Lead Writer</div>
+          </a>
+
+          <a
+            className="credit-cell"
+            href="https://www.linkedin.com/in/edward-roshko/"
+            target="_blank"
+          >
+            <img className="border-4 border-custom-purple" src="credits/Eddy.jpg" alt="Eddy Picture" />
+            <div className="credit-name">Edward Roshko</div>
+            <div className="credit-title">Script Writer</div>
+          </a>
+
+          <a
+            className="credit-cell"
+            href="https://www.linkedin.com/in/sarah-tran1029/"
+            target="_blank"
+          >
+            <img className="border-4 border-custom-purple" src="credits/Sarah.jpg" alt="Sarah Picture" />
+            <div className="credit-name">Sarah Tran</div>
+            <div className="credit-title">Script Editor</div>
+          </a>
+
+          <a
+            className="credit-cell"
+            href="https://www.linkedin.com/in/tikiri-ekanayake/"
+            target="_blank"
+          >
+            <img className="border-4 border-custom-purple" src="credits/Tikiri.jpg" alt="Tikiri Picture" />
+            <div className="credit-name">Tikiri Ekanayake</div>
+            <div className="credit-title">Script Editor</div>
+          </a>
+        </div>
+      </div>
+      
+
+      <div className="credit-container">
+        <div className="credit-row-title">Developers</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/xael-font/"
@@ -126,10 +132,13 @@ const About = () => {
           <div className="credit-name">Jason Lin</div>
           <div className="credit-title">Senior Developer</div>
         </a>
+        </div>
       </div>
+      
 
-      <div className="credit-row-title">Project Managers</div>
-      <div className="credit-row">
+      <div className="credit-container">
+        <div className="credit-row-title">Project Managers</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/jwmalegni/"
@@ -149,10 +158,12 @@ const About = () => {
           <div className="credit-name">Nicolas Valiente</div>
           <div className="credit-title">Senior Project Manager</div>
         </a>
+        </div>
       </div>
 
-      <div className="credit-row-title">Special Thanks</div>
-      <div className="credit-row">
+      <div className="credit-container">
+        <div className="credit-row-title">Special Thanks</div>
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/mathewalangadan/"
@@ -179,8 +190,11 @@ const About = () => {
           <img className="border-4 border-custom-purple" src="credits/Mohammed.jpg" alt="Mohammed Picture" />
           <div className="credit-name">Mohammed Ali</div>
         </a>
+        </div>
       </div>
-      <div className="credit-row">
+
+      <div className="credit-container">
+        <div className="credit-row">
         <a
           className="credit-cell"
           href="https://www.linkedin.com/in/josephcabezas/"
@@ -208,8 +222,10 @@ const About = () => {
           <div className="credit-name">UF Open Source Club</div>
         </a>
       </div>
-
-      <div className="credit-row-title">Music</div>
+      </div>
+      
+      <div className="credit-container">
+        <div className="credit-row-title">Music</div>
       <div className="credit-row">
         <a
           className="credit-cell"
@@ -221,6 +237,8 @@ const About = () => {
           <div className="credit-title">Menu Music </div>
         </a>
       </div>
+      </div>
+      
 
       <div className="thankyou-box">
         <div className="credit-name">
