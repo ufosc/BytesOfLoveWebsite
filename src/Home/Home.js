@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
 import {Carousel, Carousel_Rotate_Left, Carousel_Rotate_Right, Carousel_Navigation_Buttons, images} from '../Carousel/Carousel';
 
 
@@ -103,16 +102,6 @@ const Home = () => {
                     <Carousel_Navigation_Buttons fadeFunction={handleFadeNav} movementFunction={handleButtonNav} activeIndex={currentImageIndex} />
                 </div>
             </div>
-        
-
-                      
-
-            
-
-
-
-            <Footer />
-
         </div>
     );
 };

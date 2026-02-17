@@ -62,8 +62,11 @@
 }
 
 .thankyou-box {
-  margin-top: 5vh;
+  margin-top: vh;
   align-self: center;
   text-align: center;
   width: 70vw;
+  margin-bottom: 9vh;
+  border-color: purple;
+  border-width: 3px;
 }
